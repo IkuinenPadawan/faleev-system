@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Faleev System</string>
+
+    <string-array name="Week_1">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+        <item>Day 4</item>
+        <item>Day 5</item>
+    </string-array>
 </resources>
