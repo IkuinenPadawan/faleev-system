@@ -10,3 +10,7 @@ Android/Kotlin
 
 # Google Play Link
 http://… (will be updated when ready)
+
+# Release 1: 2021-05-12 features
+
+- Hours and hours of trial and error resulted in nothing.
