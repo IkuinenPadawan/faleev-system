@@ -13,4 +13,4 @@ http://… (will be updated when ready)
 
 # Release 1: 2021-05-12 features
 
-- Hours and hours of trial and error resulted in nothing.
+- Hours and hours of trial and error resulted in nothing. (I'll probably shift to building some ultra simple weather app as the lack of IQ and excess of work shifts before release probably prevent me from doing anything more complicated...)
