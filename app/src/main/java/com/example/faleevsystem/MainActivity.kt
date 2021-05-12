@@ -33,10 +33,6 @@ private fun downloadUrlAsync(context: Context, url: String, cb: (String) -> Unit
         val myUrl = URL(url)
         val conn = myUrl.openConnection() as HttpURLConnection
 
-        var result = ""
-
-        var reader = BufferedReader(InputStreamReader(conn.inputStream))
-
         val allText = conn.inputStream.bufferedReader().use(BufferedReader::readText)
 
         cb(allText)
