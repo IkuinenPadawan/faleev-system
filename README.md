@@ -13,7 +13,7 @@ http://… (will be updated when ready)
 
 # Release 1: 2021-05-12 features
 
-- Fetch JSON from backend and print it in log
+- Fetch weather information from backend and print it in log
 
 # Note to teacher regarding the original Faleev System app
 - Hours and hours of trial and error amounted to nothing. (I'll shift to building a Mars weather app (API: https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf) as the lack of IQ and excess of work shifts before release probably prevent me from doing anything more complicated...)
