@@ -1,9 +1,9 @@
-# Faleev System
+# Mars Weather App
 
 # Topic
-Mobile application for tracking the workouts of Faleev powerlifting system. User is able to track the weekly workouts, sets and reps with the application and see the progress visually in charts.
+Mobile application for displaying the current weather on mars.
 
-API used is a question mark but most likely will either be some kind of motivational quotes API, or chart API like: https://documentation.image-charts.com/ or https://charturl.com/ to generate the progress charts.
+API used: https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf
 
 # Target
 Android/Kotlin
@@ -13,4 +13,7 @@ http://… (will be updated when ready)
 
 # Release 1: 2021-05-12 features
 
-- Hours and hours of trial and error amounted to nothing. (I'll shift to building Mars weather app (API: https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf) as the lack of IQ and excess of work shifts before release probably prevent me from doing anything more complicated...)
+- Fetch weather information from backend and print it in log
+
+# Note to teacher regarding the original Faleev System app
+- Hours and hours of trial and error amounted to nothing. (I'll shift to building a Mars weather app (API: https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf) as the lack of IQ and excess of work shifts before release probably prevent me from doing anything more complicated...)
