@@ -46,19 +46,20 @@ class MainActivity : AppCompatActivity() {
                 val weather = result.getJSONObject("main")
                 val currentTemp = weather.getDouble("temp")
                 val location = result.getString("name")
+                val weatherType = result.getJSONArray("weather").getJSONObject(0).getString("description")
                 Log.d("TAG", currentTemp.toString())
                 runOnUiThread {
                     findViewById<TextView>(R.id.temperature).text = currentTemp.toInt().toString() + "°C"
                     findViewById<TextView>(R.id.location).text = location
+                    findViewById<TextView>(R.id.weatherDescription).text = weatherType
                 }
             }
         }
-        Log.d("TAG", longitude)
-        Log.d("TAG", latitude)
 
         // Find views
         val temperatureTextView: TextView = findViewById(R.id.temperature)
         val locationTextView: TextView = findViewById(R.id.location)
+        val descriptionTextView: TextView = findViewById(R.id.weatherDescription)
         val outerCircle: ImageView = findViewById(R.id.outercircle)
         val inner: ImageView = findViewById(R.id.innercircle)
 
@@ -69,13 +70,14 @@ class MainActivity : AppCompatActivity() {
 
         // Start animations
         temperatureTextView.startAnimation(fadeIn)
+        descriptionTextView.startAnimation(fadeIn)
         locationTextView.startAnimation(fadeIn)
         outerCircle.startAnimation(rotation)
         inner.startAnimation(counterRotation)
 
     }
 
-    private fun fetchLocation(cb: () -> Unit) {
+    private fun fetchLocation(callback: () -> Unit) {
         val task = fusedLocationProviderClient.lastLocation
         if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
             != PackageManager.PERMISSION_GRANTED && ActivityCompat.
@@ -89,11 +91,14 @@ class MainActivity : AppCompatActivity() {
                 latitude = it.latitude.toString()
                 longitude = it.longitude.toString()
                 Log.d("TAG", it.toString())
-                cb()
+                callback()
+            } else {
+                callback()
             }
         }
 
     }
+
     private fun downloadUrlAsync(context: Context, url: String, cb: (String) -> Unit) {
         thread() {
             cb(URL(url).readText())

@@ -7,21 +7,30 @@
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="match_parent"
+    <LinearLayout
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
         android:background="@drawable/textview_border"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="location"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp" />
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Location"
+            android:textColor="#A6A6A6"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/temperature"
@@ -31,6 +40,18 @@
         android:gravity="center"
         android:textSize="60sp"
         android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/weatherDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Analyzing data..."
+        android:textSize="16dp" />
+
     <ImageView
         android:id="@+id/outercircle"
         android:src="@drawable/outercircle"
@@ -43,6 +64,4 @@
         android:layout_height="match_parent"
         android:src="@drawable/innercircle"
         android:layout_margin="40dp"/>
-
-
 </RelativeLayout>
