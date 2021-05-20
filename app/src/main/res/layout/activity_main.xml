@@ -32,25 +32,29 @@
             android:textSize="40sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/temperature"
-        android:layout_width="match_parent"
+    <LinearLayout
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:textSize="60sp"
-        android:fontFamily="sans-serif-light"/>
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/weatherDescription"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="Analyzing data..."
-        android:textSize="16dp" />
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/weathericon"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </LinearLayout>
+
 
     <ImageView
         android:id="@+id/outercircle"
