@@ -15,7 +15,7 @@ Android/Kotlin
 # Release 2: 2021-05-21 features
 
 - Fetch weather information of user's current location and display it on a clean futuristic UI
-- Otherwordly animations
+- Otherworldly animations
 
 # Screenshots/Gifs
 ![alt text](https://github.com/IkuinenPadawan/faleev-system/blob/main/FWD.gif "Futuristic Weather Dashboard")
