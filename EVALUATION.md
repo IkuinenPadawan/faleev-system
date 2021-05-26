@@ -39,3 +39,5 @@ The app does not seem to work properly when you run it for the first time. After
 The application fills the requirement of using a REST API and also uses a device API, but contains very little functionality beyond that.
 
 There are no major issues in the code, but the app itself is not completely bug-free due to the issue mentioned above.
+
+Grade: 3
